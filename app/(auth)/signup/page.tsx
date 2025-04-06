@@ -178,7 +178,7 @@ export default function SignUp() {
                   />
                 </div>
                 <Button
-                  className="w-full text-[15px] h-[40px] !bg-blue-500 text-white font-semibold"
+                  className="w-full text-[15px] h-[40px] !bg-blue-500 hover:bg-blue-700 text-white font-semibold"
                   disabled={isPending}
                   type="submit"
                 >
@@ -233,7 +233,7 @@ export default function SignUp() {
               We just sent a verification link to {form.getValues().email}.
             </p>
             <Link href="/">
-              <Button className="h-[40px]">
+              <Button className="h-[40px] hover:bg-blue-700 bg-blue-500 text-white">
                 Go to login
                 <ArrowRight />
               </Button>

@@ -128,7 +128,7 @@ export default function Login() {
               </Link>
             </div>
             <Button
-              className="w-full text-[15px] bg-blue-500 h-[40px] text-white font-semibold"
+              className="w-full text-[15px] bg-blue-500 hover:bg-blue-700 h-[40px] text-white font-semibold"
               type="submit"
               disabled={isPending}
             >

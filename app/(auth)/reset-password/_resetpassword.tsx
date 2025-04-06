@@ -72,7 +72,6 @@ export default function ResetPassword() {
     };
     mutate(data, {
       onSuccess: (res) => {
-        // setIsSubmitted(true);
         toast({
           title: "Success",
           description: res.data.message,
@@ -151,7 +150,7 @@ export default function ResetPassword() {
 
               <Button
                 disabled={isPending}
-                className="w-full bg-blue-500 text-[15px] h-[40px] text-white font-semibold"
+                className="w-full bg-blue-500 hover:bg-blue-700 text-[15px] h-[40px] text-white font-semibold"
               >
                 Update password
                 {isPending && <Loader className="animate-spin" />}
@@ -173,7 +172,7 @@ export default function ResetPassword() {
 
           <Button
             onClick={() => router.push("/forgot-password")}
-            className="h-[40px]"
+            className="h-[40px] hover:bg-blue-700 bg-blue-500 text-white"
           >
             <ArrowLeft />
             Go to forgot password

@@ -108,7 +108,7 @@ export default function ForgotPassword() {
               </div>
               <Button
                 disabled={isPending}
-                className="w-full text-[15px] h-[40px] bg-blue-500 text-white font-semibold"
+                className="w-full text-[15px] h-[40px] hover:bg-blue-700 bg-blue-500 text-white font-semibold"
               >
                 Send reset instructions
                 {isPending && <Loader className="animate-spin" />}
@@ -135,7 +135,7 @@ export default function ForgotPassword() {
 
           <Button
             onClick={() => router.push("/")}
-            className="w-full h-[40px] bg-blue-500 text-white"
+            className="w-full h-[40px] hover:bg-blue-700 bg-blue-500 text-white"
           >
             Go to login
             <ArrowRight />
